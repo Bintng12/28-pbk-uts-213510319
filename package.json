@@ -12,7 +12,8 @@
     "@heroicons/react": "^2.0.17",
     "@heroicons/vue": "^2.0.17",
     "flowbite": "^1.6.5",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
