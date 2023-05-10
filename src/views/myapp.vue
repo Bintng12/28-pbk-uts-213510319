@@ -29,14 +29,14 @@ function removeTodo(todo) {
 </script>
 
 <template>
-  <div class="container mx-auto bg-neutral-600 rounded-xl shadow border p-20 m-10">
+  <div class="container mx-auto bg-slate-500 rounded-xl shadow border p-20 m-10">
       <div class="text-center">
           <h1 class="text-3xl font-bold pb-4">List Kegiatan</h1>
       </div>
       <div class="font-bold pb-4">
           <form @submit.prevent="addTodo">
-          <input class="shadow-lg border-spacing-2  " v-model="newTodo">
-          <button class="px-6">Tambahkan</button>
+          <input class="shadow-lg border-spacing-2 p-2 rounded-lg " placeholder="tambahkan list" v-model="newTodo">
+          <button class="px-6 border rounded-lg bg-slate-700 text-white">Tambahkan</button>
       </form>
       </div>
       <ul>
@@ -48,7 +48,7 @@ function removeTodo(todo) {
     </button>
   </li>
 </ul>
-<button @click="hideCompleted = !hideCompleted">
+<button class="border bg-slate-800 text-white text-base mt-3" @click="hideCompleted = !hideCompleted">
   {{ hideCompleted ? 'Show all' : 'Hide completed' }}
 </button>
   </div>
